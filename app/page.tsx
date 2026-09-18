@@ -107,9 +107,6 @@ export default function Home() {
       <section className={styles.content}>
         <p className={styles.eyebrow}>Humor Project · Assignment 1</p>
         <h1 className={styles.title}>Hello, world.</h1>
-        <p className={styles.subtitle}>
-          Two words, one small sun, and a whole lot of rendering.
-        </p>
       </section>
     </main>
   );
