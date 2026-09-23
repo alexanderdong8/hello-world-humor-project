@@ -1,0 +1,121 @@
+.page {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: clamp(2rem, 6vw, 4.5rem) 1rem 4rem;
+}
+
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: #9db4d8;
+  transition: color 0.2s;
+}
+
+.back:hover {
+  color: #ffd166;
+}
+
+.eyebrow {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: clamp(0.7rem, 1.6vw, 0.85rem);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #9db4d8;
+}
+
+.title {
+  margin-top: 0.4em;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: clamp(2.4rem, 8vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  background: linear-gradient(100deg, #fff6e0, #ffd166, #f2506e, #4cc9f0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.count {
+  margin-top: 1rem;
+  color: #9db4d8;
+}
+
+.count code {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  color: #eaf2ff;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.4rem;
+  border: 1px solid rgba(157, 180, 216, 0.18);
+  border-radius: 16px;
+  background: rgba(20, 26, 53, 0.55);
+  backdrop-filter: blur(6px);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(255, 209, 102, 0.5);
+  transform: translateY(-2px);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: #6f84a8;
+}
+
+.tag {
+  padding: 0.2em 0.7em;
+  border-radius: 999px;
+  background: rgba(76, 201, 240, 0.12);
+  color: #4cc9f0;
+}
+
+.setup {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.punchline {
+  color: #ffd166;
+  line-height: 1.45;
+}
+
+.message {
+  padding: 1.4rem;
+  border: 1px solid rgba(242, 80, 110, 0.4);
+  border-radius: 16px;
+  color: #ffb3c1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+}

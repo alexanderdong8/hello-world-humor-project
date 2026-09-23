@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./page.module.css";
 
 /**
@@ -107,6 +108,9 @@ export default function Home() {
       <section className={styles.content}>
         <p className={styles.eyebrow}>Humor Project · Assignment 1</p>
         <h1 className={styles.title}>Hello, world.</h1>
+        <Link href="/jokes" className={styles.cta}>
+          See the jokes →
+        </Link>
       </section>
     </main>
   );
